@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head><title>Baseline Test</title></head>
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
+  .gallery img {
+    width: 360px;
+    height: 240px;
+    object-fit: cover;
+  }
+</style>
 <body>
   <h1>Hotel Gallery</h1>
-  <img src="images/hero-1.jpg" alt="" />
-  <img src="images/hero-2.jpg" alt="" />
-  <img src="images/hero-3.jpg" alt="" />
-  <img src="images/hero-4.jpg" alt="" />
-  <img src="images/hero-5.jpg" alt="" />
+  <div class="gallery">
+    <img src="images/hero-1.jpg" alt="" />
+    <img src="images/hero-2.jpg" alt="" />
+    <img src="images/hero-3.jpg" alt="" />
+    <img src="images/hero-4.jpg" alt="" />
+    <img src="images/hero-5.jpg" alt="" />
+  </div>
 </body>
 </html>
